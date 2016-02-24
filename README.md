@@ -2,6 +2,11 @@ Yii2 Geo Selector widget
 ========================
 Ajax widget to display country, province and location selects
 
+[![Latest Stable Version](https://poser.pugx.org/macklus/yii2-geoselect/v/stable)](https://packagist.org/packages/macklus/yii2-geoselect)
+[![Latest Unstable Version](https://poser.pugx.org/macklus/yii2-geoselect/v/unstable)](https://packagist.org/packages/macklus/yii2-geoselect)
+[![License](https://poser.pugx.org/macklus/yii2-geoselect/license)](https://packagist.org/packages/macklus/yii2-geoselect)
+[![Total Downloads](https://poser.pugx.org/macklus/yii2-geoselect/downloads)](https://packagist.org/packages/macklus/yii2-geoselect)
+
 Installation
 ------------
 
@@ -24,8 +29,3 @@ to the require section of your `composer.json` file.
 
 Usage
 -----
-
-Once the extension is installed, simply use it in your code by  :
-
-```php
-<?= \macklus\geoselect\AutoloadExample::widget(); ?>```
