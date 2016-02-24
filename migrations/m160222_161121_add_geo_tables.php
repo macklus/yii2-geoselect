@@ -23,7 +23,7 @@ class m160222_161121_add_geo_tables extends Migration
         $this->addForeignKey('FK_province_country', 'geo_province', 'country_id', 'geo_country', 'id', 'CASCADE', 'CASCADE');
 
         $this->createTable('geo_location', [
-            'id' => 'smallint(6) NOT NULL',
+            'id' => 'mediumint(9) NOT NULL',
             'country_id' => 'smallint(6) NOT NULL',
             'province_id' => 'smallint(6) NOT NULL',
             'name' => 'varchar(150) CHARACTER SET latin1 NOT NULL',
@@ -37,8 +37,11 @@ class m160222_161121_add_geo_tables extends Migration
         // Get data to insert
         $sqlDir = Yii::getAlias('@vendor/macklus/yii2-geoselect/data');
         $sqlInsert1 = file_get_contents($sqlDir . '/geo_country.sql');
-        //$sqlInsert2 = file_get_contents($sqlDir . '/geo_province.sql');
-        //$sqlInsert3 = file_get_contents($sqlDir . '/geo_location.sql');
+        $this->execute($sqlInsert1);
+        $sqlInsert2 = file_get_contents($sqlDir . '/geo_province.sql');
+        $this->execute($sqlInsert2);
+        $sqlInsert3 = file_get_contents($sqlDir . '/geo_location.sql');
+        $this->execute($sqlInsert3);
     }
 
     public function safeDown()
