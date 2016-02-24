@@ -1,0 +1,21 @@
+{
+    "name": "macklus/yii2-geoselect",
+    "description": "Ajax widget to display country, province and location selects",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","widget","select","ajax","geospace"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "José Pedro Andrés",
+            "email": "macklus@debianitas.net"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "macklus\\geoselect\\": ""
+        }
+    }
+}
