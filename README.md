@@ -35,6 +35,7 @@ and run the following command:
 
 ```bash
 $ php yii migrate/up --migrationPath=@vendor/macklus/yii2-geoselect/migrations/
+```
 
 Usage
 -----
